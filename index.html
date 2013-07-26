@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html id="html">
+	<head>
+		<title>Theramin</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<style type="text/css">
+			body, div, span, a {
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			html {
+				height: 100%;
+				width: 100%;
+			}
+			body {
+				width: 100%;
+				height: 100%;
+				color: grey;
+				font-size: 20pt;
+			}
+			header {
+				padding: 60px 0;
+			}
+			.title {
+				margin: 0 auto;
+				text-align: center;
+			}
+			#controls {
+				padding-bottom: 20px;
+				margin-left: 10%;
+			}
+			.sliderContainer, .buttonContainer {
+				padding: 20px 0;
+			}
+			.buttonText {
+				font-size: 20pt;
+			}
+			input[type='range'] {
+			    width: 500px;
+			}
+	
+		</style>
+	</head>
+	<body>
+		<header>
+		<h1 class="title">Mah Theramin</h1>
+		</header>
+		<section id="controls">
+			<div class="buttonContainer">
+					<button id="onOffButton" value="I am off">
+						<span id="onOffButtonDisplay" class="buttonText"></span>
+					</button>
+			</div>
+			<div class="sliderContainer">
+				<label>
+					<input id="frequencySlider" class="slider" type="range" value="8" min="7" max="12" step="0.01"/>
+					Frequency (Hz): <span id="frequencyDisplay"></span>
+				</label>
+			</div>
+			<div class="sliderContainer">
+				<label>
+					<input id="volumeSlider" class="slider" type="range" min="0" max="200" />
+					Volume: <span id="volumeDisplay"></span>
+				</label>
+			</div>
+		</section>
+	</body>
+	<script src="theramin.js"></script>
+</html>
